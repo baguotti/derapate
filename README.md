@@ -26,6 +26,7 @@ Then open http://localhost:5180.
 - `npm run dev`: the dev server (port 5180).
 - `npm test`: type-check the tests, then run them (the rules, the Lab's settings, the light maths).
 - `npm run build`: type-check and build into `dist/` (relative paths, so it runs from any folder on a server).
+- `npm run deploy`: build and put it online at http://138.68.126.112:8080 (needs your SSH key loaded: `ssh-add ~/.ssh/id_rsa`; commit first).
 - `python3 scripts/car-sprites.py <Main-body folder> <Wheels folder>`: packs Riccardo's car renders into `public/assets/car` (needs Pillow and numpy).
 
 ## Layout

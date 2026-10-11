@@ -334,3 +334,7 @@ DERAPATE began as a mini-game inside Super Smash Fioi (the `experimental-branch`
 - **[Cleanup]** The shared pieces brought along were trimmed to what DERAPATE uses: the lit shader without the fighting game's backlit scenery and per-object rim; the atmosphere pass without sun rays and mist; the Lab's controls without the fighting game's frame counts. The game's AudioManager is gone: one-shots play with their own pitch variety, every volume is the Lab's (the soundtrack's default 0.56 keeps it as loud as before, which was Settings' 0.8 × the Lab's 0.7).
 - **[Assets]** `public/assets/car` (the sheets and `car.json`, from `scripts/car-sprites.py`), `public/assets/ui/wheel.webp`, `public/assets/audio` (the effects), `public/assets/music/zutomayo_001.mp3`, `public/fonts` (Pixeloid Sans).
 - **[S]** tsc, 25 tests, build; checked in the browser (title, the game lit with sound and soundtrack, the Lab opening and closing, ESC to the title with every sound stopped; the phone view with its thumb controls and LUCI).
+
+------------------------------------------------------------------------------------------------------------------------------------
+### [2026-10-11] Online at :8080
+- **[Deploy]** `npm run deploy` (`deploy.sh`): builds and uploads to `/var/www/derapate` on the droplet and serves it at http://138.68.126.112:8080, taking that port over from Super Smash Fioi's experimental build (its nginx site `sgalalla-experimental` is switched off; its files in `/var/www/sgalalla-experimental` and its game server stay, so it can come back).

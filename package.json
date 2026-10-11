@@ -8,7 +8,8 @@
     "dev": "vite --host 0.0.0.0",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test": "tsc -p tests && tsx --test tests/*.test.ts"
+    "test": "tsc -p tests && tsx --test tests/*.test.ts",
+    "deploy": "bash deploy.sh"
   },
   "dependencies": {
     "phaser": "^3.90.0"
