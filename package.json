@@ -1,0 +1,22 @@
+{
+  "name": "derapate",
+  "private": true,
+  "version": "0.1.0",
+  "description": "DERAPATE: donuts in a junction at dusk, a Phaser mini-game.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "tsc -p tests && tsx --test tests/*.test.ts"
+  },
+  "dependencies": {
+    "phaser": "^3.90.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.4.0",
+    "tsx": "^4.23.15",
+    "typescript": "~5.9.3",
+    "vite": "^7.2.4"
+  }
+}

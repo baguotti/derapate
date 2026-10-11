@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DERAPATE</title>
+  <style>
+    @font-face {
+      font-family: 'Pixeloid Sans';
+      font-weight: 400;
+      font-display: block;
+      src: url('./fonts/PixeloidSans.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'Pixeloid Sans';
+      font-weight: 700;
+      font-display: block;
+      src: url('./fonts/PixeloidSansBold.woff') format('woff');
+    }
+  </style>
+</head>
+
+<body>
+  <div id="game-container"></div>
+  <!-- Phones held upright: the game is landscape (style.css shows this only then) -->
+  <div id="rotate-phone"><div class="phone"></div><p>RUOTA IL TELEFONO</p></div>
+  <script type="module" src="./src/main.ts"></script>
+</body>
+
+</html>
