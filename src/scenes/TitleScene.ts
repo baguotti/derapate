@@ -49,13 +49,16 @@ export class TitleScene extends Phaser.Scene {
         this.add.text(width / 2, height * 0.86, help, { ...style, fontSize: '24px', color: '#9e9e9e', strokeThickness: 4 }).setOrigin(0.5);
 
         this.input.keyboard?.once('keydown', () => this.start());
-        this.input.once('pointerup', () => this.start());
+        this.input.once('pointerup', () => {
+            // Full screen only from a tap: the browser refuses it otherwise
+            enterFullscreenOnPhone(this);
+            this.start();
+        });
     }
 
     private start(): void {
         if (this.started) return;
         this.started = true;
-        enterFullscreenOnPhone(this);
         this.scene.start('DonutScene');
     }
 }
