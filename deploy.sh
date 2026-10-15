@@ -1,7 +1,6 @@
 #!/bin/bash
 # Put DERAPATE online at http://138.68.126.112:8080 (/var/www/derapate on the droplet).
-# It took over port 8080 from Super Smash Fioi's experimental build, whose files stay in
-# /var/www/sgalalla-experimental with their nginx site switched off (sgalalla-experimental).
+# Super Smash Fioi's experimental build, which used to be on 8080, is on 8081 now.
 # Run on your LOCAL machine with everything committed: the droplet gets what is committed.
 
 set -e
@@ -48,8 +47,6 @@ server {
 }
 NGINX
 ln -sf /etc/nginx/sites-available/derapate /etc/nginx/sites-enabled/
-# Port 8080 was Super Smash Fioi's experimental build: its site goes off (its files stay)
-rm -f /etc/nginx/sites-enabled/sgalalla-experimental
 
 chown -R www-data:www-data "$SITE_PATH"
 chmod -R 755 "$SITE_PATH"

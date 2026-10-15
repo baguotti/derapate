@@ -338,3 +338,7 @@ DERAPATE began as a mini-game inside Super Smash Fioi (the `experimental-branch`
 ------------------------------------------------------------------------------------------------------------------------------------
 ### [2026-10-11] Online at :8080
 - **[Deploy]** `npm run deploy` (`deploy.sh`): builds and uploads to `/var/www/derapate` on the droplet and serves it at http://138.68.126.112:8080, taking that port over from Super Smash Fioi's experimental build (its nginx site `sgalalla-experimental` is switched off; its files in `/var/www/sgalalla-experimental` and its game server stay, so it can come back).
+
+------------------------------------------------------------------------------------------------------------------------------------
+### [2026-10-15] Deploy alongside Super Smash Fioi's experimental build
+- **[Deploy]** That build moved to port 8081, so `deploy.sh` no longer switches its site off.
